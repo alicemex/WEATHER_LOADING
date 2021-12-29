@@ -16,7 +16,7 @@ const Pokedex = ({background}) => {
     return (
         <div className="Card"  style={{background}}>
             <h2>{pokemon.name}</h2>
-            <img src={pokemon.sprites?.front_default}></img>
+            <img alt= "pokemon" src={pokemon.sprites?.front_default}></img>
            <ul>
                <li> <p>Weight: {pokemon?.weight}</p></li>
                <li><p>Weight: {pokemon?.height}</p></li>
