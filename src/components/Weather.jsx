@@ -28,7 +28,7 @@ const Weather = () => {
         
     },[]);
 
-     console.log(weatherData?.sys.country);
+   
 let kelvin = weatherData.main?.temp;
 let centigrados = (kelvin- 273.15);
 centigrados = centigrados.toFixed(2);

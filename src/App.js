@@ -1,10 +1,7 @@
 
 import './App.css';
-import MyComponent from './components/MyComponent.js'
-import Card from './components/Card.jsx'
-import Led from './components/Led.jsx';
 import Weather from './components/Weather.jsx'
-import Pokedex from './components/Pokedex.jsx'
+
 function App() {
   return (
    
