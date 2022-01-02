@@ -9,12 +9,12 @@ function App() {
   return (
    
     <>
-    <MyComponent  name="Dalia Macias" age={32} isMarried={false} ></MyComponent>
+    {/* <MyComponent  name="Dalia Macias" age={32} isMarried={false} ></MyComponent> */}
     <div className="Flex">
-    <Pokedex background="#fff"></Pokedex>
+   {/*  <Pokedex background="#fff"></Pokedex> */}
     <Weather></Weather>
     </div>
-    <Led className="foco"></Led> 
+    {/* <Led className="foco"></Led> 
     
     <div className='App' >
     
@@ -40,7 +40,7 @@ function App() {
         item2="wraps" 
         item3="sandwitches" 
         background="#32C1CD" ></Card>
-    </div>
+    </div> */}
     </>
   );
 }
