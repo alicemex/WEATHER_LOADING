@@ -33,15 +33,29 @@ let kelvin = weatherData.main?.temp;
 let centigrados = (kelvin- 273.15);
 centigrados = centigrados.toFixed(2);
     return (
-        <div  className="Weather">
-            <img src={`http://openweathermap.org/img/wn/${weatherData.weather?.[0].icon}@2x.png`} alt="icon" />
-            {/* <p>Country: {weatherData?.sys.country}</p>  */}
-            <p>City:  {weatherData.name} </p>
-            <p>Sky:  {weatherData.weather?.[0].main} </p>
-            <p>Descrpition:  {weatherData.weather?.[0].description} </p>
-            <p>Feels like: {units?`${centigrados}°C`:`${(centigrados*1.8)+32}°F`} </p>
-            <button onClick={changeUnits}>Change units</button>
-        </div>
+        <>
+        {
+            weatherData.name ? (
+                <div  className="Weather">
+                <div className="container">
+                <img src={`http://openweathermap.org/img/wn/${weatherData.weather?.[0].icon}@2x.png`} alt="icon" />
+                 <p>Country: {weatherData?.sys.country}</p> 
+                <p>City:  {weatherData.name } </p>
+                <p>Sky:  {weatherData.weather?.[0].main} </p>
+                <p>Descrpition:  {weatherData.weather?.[0].description} </p>
+                <p>Feels like: {units?`${centigrados}°C`:`${(centigrados*1.8)+32}°F`} </p>
+                <button onClick={changeUnits}>Change units</button>
+                </div>
+            </div>
+            ) : (
+                <div className='loading'>
+                <img src="https://c.tenor.com/FBeNVFjn-EkAAAAC/ben-redblock-loading.gif"></img>
+                </div>
+            )
+        }
+        
+        
+        </>
     );
 };
 

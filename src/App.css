@@ -15,14 +15,23 @@
   color:white;
   width:100vw;
   min-height: 100vh;
-  margin:0;
   padding:2rem;
   text-align: center;
+  display:flex;
+  align-items: center;
 }
 
-.Weather p{
+.container{
   background-color:rgba(0,0,0,.5);
+  line-height: 1.5rem;
+  width: 50vw;
+  margin:auto;
 }
+
+.container img{
+  width:10rem;
+}
+
 body{
   background-color: #222025;
   color:white;  
@@ -72,8 +81,8 @@ justify-content: center;
 
 }
 button{background-color: transparent;
-color:darkslategray;
-border:solid darkslategray 1px;
+color:white;
+border:solid white 1px;
 border-radius: 15px;
 padding:1rem;
 margin: 2rem auto;
@@ -93,4 +102,16 @@ color:red;
   margin:2rem auto;
   width:100vw;
   display:flex;
+}
+
+.loading{
+  background-color:rgb(12, 127, 161);
+  width:100vw;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+}
+
+.loading img{
+width:100%;
 }
