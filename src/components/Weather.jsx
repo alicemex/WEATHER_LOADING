@@ -38,7 +38,7 @@ centigrados = centigrados.toFixed(2);
             weatherData.name ? (
                 <div  className="Weather">
                 <div className="container">
-                <img alt="weather" src={`http://openweathermap.org/img/wn/${weatherData.weather?.[0].icon}@2x.png`} alt="icon" />
+                <img  src={`http://openweathermap.org/img/wn/${weatherData.weather?.[0].icon}@2x.png`} alt="icon" />
                  <p>Country: {weatherData?.sys.country}</p> 
                 <p>City:  {weatherData.name } </p>
                 <p>Sky:  {weatherData.weather?.[0].main} </p>
